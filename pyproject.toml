@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kafka-zero-to-hero"
+version = "0.1.0"
+description = "Beginner-friendly Kafka zero to hero tutorial with runnable demos"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "kafka-python>=2.1.5,<3.0",
+]
+
+[tool.setuptools.packages.find] 
+where = ["src"]     
