@@ -14,7 +14,7 @@ def parse_args() -> argparse.Namespace:
         default="",
         help="Optional. If empty, a new group id is generated for each run.",
     )
-    parser.add_argument(
+    parser.add_argument( 
         "--from-beginning",
         action="store_true",
         help="Read from earliest offset instead of only new events.",
